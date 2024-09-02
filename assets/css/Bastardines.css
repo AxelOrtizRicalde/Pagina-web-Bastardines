@@ -1,0 +1,190 @@
+/* Seccion de carrusel */
+.Seccion2-carrusel {
+    margin: 0;
+    padding: 0;
+    font-family: "Geologica";
+    display: flex;
+    height: 45vh;
+    width: 98vw;
+    align-items: center;
+}
+h4,a{
+    margin: 0;
+    padding: 0;
+    width: 76%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a{
+    text-decoration: none;
+}
+.Carousel{
+    width: 100%;
+    margin: 0;
+}
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+/* imagenes carrusel */
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 40vh;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick picture {
+    display: flex;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.slick a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.7);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: 0.8;
+    transform: scale(1.1)
+}
+.slick a img:active{
+    opacity: 0.5;
+    transform: scale(1)
+}
+/* botones carrusel */
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all .3s ease;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+.slick-prev:hover, .slick-next:hover{
+    background-color: #f22259;
+}
+/* Seccion de galeria */
+.Seccion3-Productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Geologica';
+    margin: 0;
+}   
+.item {
+    border-radius: 10px;
+}
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+}
+.item:hover img{
+    transform: scale(1.1)
+}
+.info-producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+.info-producto h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-producto button{
+    font-family: 'Geologica';
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    background-color: #f22259;
+    color: #fff;
+    transition: all .3s ease;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.info-producto button:hover{
+    background-color: #0ddda6;
+}
+/* Seccion responsiva */
+ @media screen and (max-width: 770px) {
+    /* Galeria responsiva */
+    .Seccion3-Productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

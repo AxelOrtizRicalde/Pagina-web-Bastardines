@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica';
+}
+/*Encabezado y navegacion */
+.Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000080;
+    font-family: "Geologica";
+}
+.logo img {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+}
+.logo a{
+    background-color: rgba(0, 0, 0, 0);
+}
+.menu-navegacion {
+    list-style: none;
+    padding-right: 10px;
+    margin: 1em;
+    font-size: 100%;
+    text-decoration: none;
+}
+.menu-navegacion ul{
+    display: "flexbox"; 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #f22259;
+}
+.menu-navegacion li {
+    display: inline;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #f5f0ed;
+    text-align: center;
+}
+.menu-sesion, .menu-favoritos, .menu-carrito {
+    display: "flexbox";
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #f22259;
+    border-radius: 40px;
+    background-color: #f22259;
+    transition: all .3s ease;
+    color: #f5f0ed;
+ }
+ .menu-sesion:hover, .menu-favoritos:hover, .menu-carrito:hover{
+    background-color: #0ddda6;
+    border-color: #0ddda6;
+ }
+.menu-toggle {
+    display: none;
+}
+/* footer */
+footer {
+    font-family: "Geologica";
+    background-color: #000080;
+    color: #f5f0ed;
+    padding: 1px;
+    margin-top: auto;
+}
+.redes-sociales {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.redes-sociales h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+.redes-sociales ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.redes-sociales ul li svg {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+.redes-sociales a{
+    background-color: rgba(0, 0, 0, 0);
+}
+.derechos-reservados {
+    text-align: center;
+}
+
+/* Seccion responsiva */
+ @media screen and (max-width: 770px) {
+    /* Encabezado responsivo */
+    .menu-navegacion {
+        display: none;
+    }
+    .menu-responsivo-sesion, .menu-responsivo-favoritos, .menu-responsivo-carrito {
+        background-color: rgba(0, 0, 0, 0);
+        color: #f22259;
+        transition: all .3s ease;
+    }
+    .menu-responsivo-sesion:hover, .menu-responsivo-favoritos:hover, .menu-responsivo-carrito:hover {
+        color: #0ddda6;
+    }
+    .menu-toggle  {
+        display: block;
+        cursor: pointer;
+        padding-right: 25px;
+    }
+    .material-symbols-outlined {
+        margin-left: 1em;
+        font-variation-settings: 'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48
+    }
+ }

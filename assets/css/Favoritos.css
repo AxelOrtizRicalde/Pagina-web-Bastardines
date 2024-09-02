@@ -1,0 +1,50 @@
+/* Estilos para el contenedor de favoritos */
+.favoritos-container {
+    text-align: center;
+    padding: 40px 20px;
+    height: 70vh;
+}
+
+/* Estilos para el título "Tus imágenes favoritas" */
+.favoritos-container h2 {
+    margin-bottom: 20px;
+    color: #000080;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000080;
+    padding-bottom: 10px;
+}
+
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/* Estilos para cada imagen favorita */
+.imagen-favorita {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.imagen-favorita img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.imagen-favorita img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
